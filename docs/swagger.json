@@ -31,13 +31,37 @@
       }
     },
     "/categories/{id}": {
-      "get": {
-      },
       "put": {
       },
       "delete": {
       }
-    }
+    },
+    "/products": {
+      "get": {
+        "description": "Get all products",
+        "responses": {
+          "200": {
+            "description": "Returned a list of products",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAll"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+
+      }
+    },
+    "/products/{id}": {
+      "put": {
+      },
+      "delete": {
+      }
+    },
   },
   "components": {
     "schemas": {
