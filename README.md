@@ -4,7 +4,7 @@
 
 ### Links and Resources
 * [submission PR](https://github.com/rsl-401-advanced-javascript/simple-api/pull/1)
-* [travis](https://travis-ci.com/rsl-401-advanced-javascript/simple-api)
+* [swaggerhub](https://app.swaggerhub.com/apis/RoryLetteney/simple-api/1.0)
 
 ### Modules
 

@@ -28,6 +28,22 @@
         }
       },
       "post": {
+        "description": "Add a new category",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/categories"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        }
       }
     },
     "/categories/{id}": {
@@ -53,7 +69,22 @@
         }
       },
       "post": {
-
+        "description": "Add a new product",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/products"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        }
       }
     },
     "/products/{id}": {
@@ -61,7 +92,7 @@
       },
       "delete": {
       }
-    },
+    }
   },
   "components": {
     "schemas": {
