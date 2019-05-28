@@ -1,0 +1,108 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Core API",
+    "description": "The worlds funnest little API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080/"
+    }
+  ],
+  "paths": {
+    "/categories": {
+      "get": {
+        "description": "Get all categories",
+        "responses": {
+          "200": {
+            "description": "Returned a list of categories",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAll"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "description": "Add a new category",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/categories"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    },
+    "/categories/{id}": {
+      "put": {
+      },
+      "delete": {
+      }
+    },
+    "/products": {
+      "get": {
+        "description": "Get all products",
+        "responses": {
+          "200": {
+            "description": "Returned a list of products",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/getAll"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "description": "Add a new product",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/products"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    },
+    "/products/{id}": {
+      "put": {
+      },
+      "delete": {
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "getAll": {
+        "type": "object",
+        "example": [
+          "{}",
+          "{}"
+        ]
+      }
+    }
+  }
+}

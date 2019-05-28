@@ -1,0 +1,66 @@
+{
+  "categories": [
+    {
+      "_id": 1,
+      "name": "cars",
+      "display_name": "Cars",
+      "description": "Car brands."
+    },
+    {
+      "_id": 2,
+      "name": "dogs",
+      "display_name": "Dogs",
+      "description": "Breeds of dogs."
+    },
+    {
+      "_id": 3,
+      "name": "arduino",
+      "display_name": "Arduino",
+      "description": "Controllers offered by Arduino."
+    }
+  ],
+  "products": [
+    {
+      "_id": 1,
+      "category": "cars",
+      "name": "maserati",
+      "display_name": "Maserati",
+      "description": "Luxury vehicle."
+    },
+    {
+      "_id": 2,
+      "category": "cars",
+      "name": "mazda",
+      "display_name": "Mazda",
+      "description": "Slick vehicle."
+    },
+    {
+      "_id": 3,
+      "category": "dogs",
+      "name": "basset hound",
+      "display_name": "Basset Hound",
+      "description": "Floppy dog."
+    },
+    {
+      "_id": 4,
+      "category": "dogs",
+      "name": "great dane",
+      "display_name": "Great Dane",
+      "description": "Big dog."
+    },
+    {
+      "_id": 5,
+      "category": "arduino",
+      "name": "uno",
+      "display_name": "Uno",
+      "description": "Basic board."
+    },
+    {
+      "_id": 6,
+      "category": "arduino",
+      "name": "nano",
+      "display_name": "Nano",
+      "description": "Other board."
+    }
+  ]
+}
