@@ -8,7 +8,7 @@
     },
     {
       "_id": 2,
-      "name": "Dogs",
+      "name": "dogs",
       "display_name": "Dogs",
       "description": "Breeds of dogs."
     },
